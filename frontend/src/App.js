@@ -29,7 +29,7 @@ function App() {
         onChange={(e) => setCedula(e.target.value)}
       />
       <button onClick={buscarCliente}>Buscar</button>
-      <button onClick={() => navigate("/clientes")}>Administrar Clientes</button>
+      <br></br>
 
       {error && <p style={{ color: "red" }}>{error}</p>}
 
@@ -43,6 +43,7 @@ function App() {
           <p>Hasta cuándo tiene pago: {cliente.fecha_vencimiento || "No registra"}</p>
         </div>
       )}
+      <button onClick={() => navigate("/clientes")}>Administrar Clientes</button>
     </div>
   );
 }

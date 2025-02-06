@@ -126,6 +126,7 @@ function Clientes() {
       )}
 
       {/* Formulario para agregar un nuevo cliente */}
+      <div>
       <h2>Agregar Nuevo Cliente</h2>
       <input
         type="text"
@@ -133,19 +134,23 @@ function Clientes() {
         value={nuevoNombre}
         onChange={(e) => setNuevoNombre(e.target.value)}
       />
+      <br></br>
       <input
         type="text"
         placeholder="Cédula"
         value={nuevoCedula}
         onChange={(e) => setNuevoCedula(e.target.value)}
       />
+      <br></br>
       <input
         type="text"
         placeholder="Contacto"
         value={nuevoContacto}
         onChange={(e) => setNuevoContacto(e.target.value)}
       />
+      <br></br>
       <button onClick={agregarCliente}>Agregar Cliente</button>
+      </div>
     </div>
   );
 }
